@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mirage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f903154e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/js" href=""/>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html">The Mirage</a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="services.html" target="_blank">Services</a></li>
+            <li><a href="moreredirect.html" target="_blank">More</a></li>
+            <li><a href="contact-us.html" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class='fullscreenDiv'>
+        <div class="center">
+            <h1>Hey There Brainy!</h1>
+            <h3>It's Quiz Time!</h3>
+            <div class="sign-up">
+                <button class="btn" role="button" id="signredirect">Play Quiz</button>
+            </div>
+         </div>
+    </div>
+    
+
+    
+<script type="text/javascript">
+    document.getElementById("signredirect").onclick = function () {
+        location.href = "quizredirect.html";
+    };
+</script>
+    
+</body>
+</html>

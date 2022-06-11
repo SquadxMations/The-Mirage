@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/7f903154e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <!------Contact Section Starts------>
+
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2 class="heading">Information</h2>
+            <div><i class="fas fa-map-marker-alt"></i>Location - Shivpuri, M.P.</div>
+            <div><i class="fa-solid fa-user-tie"></i>Name - Piyush Rajak</div>
+            <div><i class="fa-solid fa-school"></i>School - St. Benedict's School</div>
+            <div><i class="fa-solid fa-landmark"></i>Class - 10th C</div>
+            <div><i class="fa-solid fa-envelope"></i><a href="mailto:squadmationsofficial@gmail.com" target="_blank">squadmationsofficial@gmail.com</a></div>
+            <div><i class="fa-solid fa-phone"></i>+91 99999 99999</div> 
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/squadmationsofficial@gmail.com" method="POST">
+                <input type="text" name="name" class="text-box" placeholder="Your Name" autocomplete="off" required >
+                <input type="email" name="email" class="text-box" placeholder="Your Email" autocomplete="off" required>
+                <textarea name="message" rows="5" placeholder="Message" autocomplete="off" required></textarea>
+                <input type="submit" name="submit" onclick="bootstrapAlert()" class="send-btn" value="Send">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

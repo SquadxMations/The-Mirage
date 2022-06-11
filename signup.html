@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Signup Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body class="preload">
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        <h5>Loading.. Please Wait</h5>
+    </div>
+
+    <br><hr style="color: rgb(0, 0, 0); width: 90%; border: 0.5px solid black; margin-top: -640px; position: absolute;" class="underline">
+    <br>
+
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title signup">Signup Form</div>
+        </div>
+
+        <div class="form-container"> 
+        <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked>
+            <input type="radio" name="slider" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slide-tab"></div>
+        </div>
+            <div class="form-inner">
+
+
+                <!-------Login Section------>
+                
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" placeholder="Skip Login" id="username" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="By Clicking Submit" required>
+                    </div>
+                    <div class="pass-link"><a href="redirect/pass.html" target="_blank">Forgot password?</a></div>
+                    <div class="field">
+                        <input type="submit" value="Login" id="loginclick">
+                    </div>
+                    <div class="signup-link">Not a Member? <a href="#">Signup now</a></div>
+                </form>
+
+
+                <!------Sign Up Section----->
+
+                <form action="#" class="signup">
+                    <div class="field">
+                        <input type="text" placeholder="Login/Signup System" id="username" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="It's Not working.." required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Please Skip!" required>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Sign up" id="signupclick">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><hr style="color: rgb(0, 0, 0); width: 90%; border: 0.5px solid black; margin-top: 600px; position: absolute;" class="underline">
+    <br>
+    <div class="footer"><h5>No Need For Signup..<br> You Can Add Any Random Numbers in Login Section.. It'll Work.<br></h5></div><br>
+
+
+    <script type="text/javascript">
+        document.getElementById("loginclick").onclick = function () {
+            location.href = "mainbase.html";
+        };
+    </script>
+
+<script type="text/javascript">
+    document.getElementById("signupclick").onclick = function () {
+        location.href = "mainbase.html";
+    };
+</script>
+        
+    <script>
+        const loginForm = document.querySelector("form.login");
+        const signupForm = document.querySelector("form.signup");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector(".signup-link a");
+        const loginText = document.querySelector(".title-text .login");
+        const signupText = document.querySelector(".title-text .signup");
+        signupBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+            signupBtn.click();
+            return false;
+        });
+    </script>
+
+    <script>
+        $(window).on("load",function(){
+     $(".loader-wrapper").delay(2000).fadeOut("slow");
+});
+    </script>
+</body>
+</html>

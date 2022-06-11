@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background: -webkit-linear-gradient(left, #e6ff04, #f7f308, #f79708);
+    }
+    h4{
+        margin-left: 10px;
+        justify-content: space-between;
+    }
+    input{
+        padding-left: 5px;
+        outline: none;
+        border-radius: 5px;
+        background: transparent;
+        background-color: azure;
+        transition: all 0.5s ease;
+    }
+    input:focus{
+        border-color: rgb(51, 92, 153);
+    }
+    .change{
+        position: absolute;
+        margin-left: -83px;
+        padding: 8px 20px;
+        transition: 0.8s ease;
+    }
+    .change:focus{
+        color: rgb(255, 255, 255);
+        background-color: rgb(170, 7, 2);
+        border-color: rgb(54, 16, 97);
+    }
+</style>
+
+<body>
+    <br>
+    <center><h3>Forgot Password? Reset It Then</h3><br><hr style="width: 90%; color: black"></center> <br>
+    <center><h4> Enter Password : <br><input type="password" placeholder="New password"></h4><br>
+    <h4> Retype Password : <br><input type="password" placeholder="Confirm password"></h4><br>
+    <input class="change" type="submit" value="Change password"><br><br><hr style="width: 90%; color: black"><br>
+    <h5> Note: Enter A Unique and Long Password(min- 6 characters : max- 8 characters Suggested)<br></h5></center>
+</body>
+</html>

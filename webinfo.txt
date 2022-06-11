@@ -1,0 +1,14 @@
+   index.html - starting page
+
+1. index.html > signup.html > mainbase.html || index.html > mainbase
+
+   mainbase.html - home page
+
+2. mainbase > quizredirect.html
+
+   quizredirect.html - quiz and games page
+
+
+
+   --THE REST YOU NEED TO FIGURE OUT.. Sorry--
+

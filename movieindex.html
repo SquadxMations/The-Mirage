@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneGlimpse</title>
+    <link rel="stylesheet" href="css/moviestyle.css"/>
+    <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="shortcut icon" href='https://drive.google.com/uc?export=view&id=1nX1TulCZTajl57pgnkvI5P7gpt6o2Hm1'/>
+
+    <!---- Js Linking ---->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+
+    <!----- Fonts ---->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+
+    <!----Using FontAwesome---->
+    <script src="https://kit.fontawesome.com/7f903154e6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+    <!---Navigation--->
+    <nav>
+        <!---Logo--->
+        <div class="logo"><a href="#">OneGlimpse</a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <!------Menu----->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Anime</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Horror</a></li>
+            <li><a href="#">Comedy</a></li>
+        </ul>
+        <!------Search------>
+        <div class="search">
+            <input type="text" placeholder="Find Your Desired Show"/>
+            <!------ Search Icon ----->
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+
+    <section id="main">
+        <!-----Showcase----->
+        <!-----Heading------->
+        <h1 class="showcase-heading">Showcase</h1>
+
+        <ul id="autoWidth" class="cs-hidden">
+
+            <!-----Box 1---->
+            <li class="item-a">
+             <div class="showcase-box">
+             <img src='https://drive.google.com/uc?export=view&id=1d9cmPIG9d9oC2jd-FRKXn0Z6o5F0_ByC'/>
+             </div>
+            </li>
+
+            <!-----Box 2---->
+            <li class="item-b">
+                <div class="showcase-box">
+                <img src='https://drive.google.com/uc?export=view&id=1JERbZZbFze8dL1TvauJwQUtS3kGDc7LL'/>
+                </div>
+               </li>
+
+               <!-----Box 3---->
+            <li class="item-c">
+                <div class="showcase-box">
+                <img src='https://drive.google.com/uc?export=view&id=1NBcD2DqRH_6EKyau5-uIgijDPQz6Maxs'/>
+                </div>
+               </li>
+
+               <!-----Box 4---->
+            <li class="item-d">
+                <div class="showcase-box">
+                <img src='https://drive.google.com/uc?export=view&id=1cXxP6HQmtNnwlJ2k0yZ4ySFb3Wgu9vWB'/>
+                </div>
+               </li>
+
+               <!-----Box 5---->
+            <li class="item-e">
+                <div class="showcase-box">
+                <img src='https://drive.google.com/uc?export=view&id=1h6EFkUxlfEgWyoxI6BZP1kcdARR4qMVl'/>
+                </div>
+               </li>
+
+          </ul>
+
+
+    </section>
+
+    <!----Latest Movies---->
+
+    <section id="latest">
+        <h2 class="latest-heading">● More Will Be Added Soon ●</h2>
+        
+        <!----Slider---->
+        <ul id="autoWidth" class="cs-hidden">
+            <!----SlideBox 1---->
+            <li class="item-a">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src=""
+                    </div>
+                </div>
+            </li>
+          </ul>
+    </section>
+
+    <!---Slider script--->
+    <script>
+              $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+    </script>
+</body>
+</html>

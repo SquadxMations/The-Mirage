@@ -1,0 +1,212 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> ');
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    background-image: url('https://drive.google.com/uc?export=view&id=142VCfLpWgS842ecYjJJkwYDpT9Ci3D7i');
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+nav{
+    height: 100px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8px;
+    margin-left: -10px;
+    padding: 0px 100px 0px 120px;
+}
+
+nav .logo a{
+    font-size: 33px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+nav .logo a:hover{
+    color: rgb(235, 213, 209);
+    text-shadow: 0px 0px 5px rgba(241, 238, 238, 0.5);;
+    transition: 0.4s ease;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    transition: 0.4s ease;
+}
+
+nav ul li a:hover{
+    color: rgb(250, 220, 215);
+    transition: 0.4s ease;
+}
+
+nav ul li a.active{
+    color: #111;
+    transition: 0.4s ease;
+    border-radius: 5px;
+    background: rgb(255, 252, 249);
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.center {
+    position: absolute;
+    font-size: 160%;
+    width: 300px;
+    height: 50px;
+    top: 47%;
+    left: 46%;
+    margin-left: -20px; /* margin is -0.5 * dimension */
+    margin-top: -55px; 
+}
+
+.center h1{
+    margin-left: -70px;
+}
+
+.center h3{
+    font-size: 100%;
+    align-items: center;
+    top: 140%;
+    left: 9%;
+    position: absolute;
+}
+
+
+#click{
+    display: none;
+}
+
+.sign-up{
+    position: absolute;
+    font-size: 160%;
+    width: 300px;
+    height: 50px;
+    top: 47%;
+    left: 44%;
+    margin-left: -110px; /* margin is -0.5 * dimension */
+    margin-top: 105px; 
+}
+
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #36395A;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#8b8bd3 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #FCFCFD;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Barlow Condensed", sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  letter-spacing: 2px;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-4px);
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 940px) {
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -3000px;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    #click:checked ~ ul{
+        left: -60px;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: rgb(0, 158, 158);
+        background: #fff;
+    }
+    nav .logo a{
+        margin-left: -55px;
+    }
+    nav .menu-btn i{
+        display: block;
+        margin-right: -55px;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .center h1{
+        margin-left: -120px;
+        
+    }
+    .center h3{
+        margin-left: -47px;
+    }
+    .sign-up{
+        margin-left: -160px;
+    }
+    .btn{
+        margin-left: -8px;
+    }
+}
+
