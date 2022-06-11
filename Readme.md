@@ -1,9 +1,9 @@
 
 <!---Links--->
 
-     * Website Link - (Not Google Drive)
-     * Youtube -
-     * Instagram - 
+     * Website Link - https://squadxmations.github.io/mirage.io/
+     * Youtube - https://www.youtube.com/channel/UCjtYQKvUs9YMr02dD8T8ZSQ
+     * Instagram - ???
 
 <!---About Me--->
 
