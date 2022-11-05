@@ -115,7 +115,7 @@ nav .menu-btn i{
 }
 
 
-.btnyt {
+#yt {
   align-items: center;
   appearance: none;
   background-color: #C41313;
@@ -148,7 +148,7 @@ nav .menu-btn i{
   width: 137px;
 }
 
-.btnyt:hover {
+#yt:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-4px);
 }
