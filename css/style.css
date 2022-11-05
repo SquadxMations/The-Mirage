@@ -153,7 +153,7 @@ nav .menu-btn i{
   transform: translateY(-4px);
 }
 
-btn {
+.btn {
   align-items: center;
   appearance: none;
   background-color: #36395A;
